@@ -125,3 +125,5 @@ The grammar is a true work of horror. I strip out any punctuation that isn't a c
 
 It could be extended to support more formats easily, or made a bit smarter with stricter tokens, or the auto-parse multi could really be removed entirely, because you could just use the `strptime` style format strings. I mainly added it for `all(< experimental learning fun >)` purposes.
 
+## Conclusion
+It seems I've gone to great lengths to undersell this module multiple times in this README. That's mainly because I don't want anyone to confuse this module for something production-ready and bug-free. It was just a sketch of something that I would like to see on the ecosystem, and this started out as a sketch of that idea. Maybe I should add it under the `Acme` namespace? Even if I did release it as a module, I'm not confident I have the spare time to maintain it, so I'm more than happy for someone else to take clone this module and run with it.
