@@ -104,7 +104,7 @@ say $dtp; # 2016-10-05T15:43:21Z    [ Dately object ]
 ```
 I've already covered format strings, and you probably know how to use them, so I'll stop there.
 
-As a final note on format parsing, I don't think there is any module currently in the ecosystem that does `strftime` style parsing. I think it's mainly because it's a pain to do right... Which is to say, I probably have missed a few edge cases... Which is to say, my implementation is probably not a reference you want to copy.
+As a final note on format parsing, I don't think there is any module currently in the ecosystem that does `strptime` style parsing. I think it's mainly because it's a pain to do right... Which is to say, I probably have missed a few edge cases... Which is to say, my implementation is probably not a reference you want to copy.
 
 ## Magic
 Now for a little silliness. Often the dates I'm working with are in a set format, so I don't want to bother with format strings most of the time, so `.parse` has an "auto-parse" multi that takes no format string; It will attempt to parse your string just by looking at it! Please stop furrowing your brow, I'm aware how stupid this is.
