@@ -31,14 +31,14 @@ say $dt.mdy('|'); # 10|05|2016
 say $dt.hms;      # 15:43:21
 say $dt.hms(','); # 15,43,21
 say $dt.time;     # 15:43:21    [ same as .hms() with no arg ]
-say $dt.meridiem; # PM
 
 say $dt.cdate;    # Wed Oct  5 15:43:21 2016
 
-# These 2 are used for formatting later, but you can use them if you like
+# These ones are used for formatting later, but you can use them if you like
 
 say $dt.yr;       # 16          [ 2-digit year ]
 say $dt.clock;    # 3           [ hour as per clock face }]
+say $dt.meridiem; # PM
 ```
 
 The default date and time separators can be redefined.
