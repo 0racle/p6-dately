@@ -109,7 +109,7 @@ As a final note on format parsing, I don't think there is any module currently i
 ## Magic
 Now for a little silliness. Often the dates I'm working with are in a set format, so I don't want to bother with format strings most of the time, so `.parse` has an "auto-parse" multi that takes no format string; It will attempt to parse your string just by looking at it! Please stop furrowing your brow, I'm aware how stupid this is.
 
-As an Australian, I only partially recognise the American silliness of the MDY format as provided in the `.mdy` method. As far as auto-parsing is concerned, it will always presume DMY on ambiguous dates. I guess this could also be edited to appeal to American tastes, or even set via variable or locale setting, but I probably won't be making changes to this thing.
+As an Australian, I only partially recognise the American silliness of the MDY format as provided in the `.mdy` method. As far as auto-parsing is concerned, it will always presume DMY on ambiguous dates. I guess this could be modified to appeal to American tastes, or even set via an option or locale setting, but I probably won't be making changes to this thing.
 
 In any case, here is a sample of formats that auto-parse correctly.
 
