@@ -114,7 +114,7 @@ Now for a little silliness. Often the dates I'm working with are in a set format
 
 As an Australian, I only partially recognise the American silliness of the MDY format as provided in the `.mdy` method. As far as auto-parsing is concerned, it will always presume DMY on ambiguous dates. I guess this could be modified to appeal to American tastes, or even set via an option or locale setting, but I probably won't be making changes to this thing.
 
-In any case, here is a sample of formats that auto-parse correctly.
+In any case, here is a sample of formats that auto-parse correctly. NB: Timezone strings are ignored.
 
 ```perl6
 say Dately.parse( '2015-11-12T09:34:57' );                 # OUTPUT: 2015-11-12T09:34:57Z
