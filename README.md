@@ -47,7 +47,7 @@ say $dt.date-seperator;    # '-'    [ returns current date-seperator ]
 $dt.date-seperator('/');   # '/'    [ sets new seperator and returns it ]
 
 say $dt.time-seperator;    # ':'    [ returns current time-seperator ]
-$dt.time-seperator('_');   # '/'    [ sets new seperator and returns it ]
+$dt.time-seperator('_');   # '_'    [ sets new seperator and returns it ]
 
 # Now when using methods like .ymd and .time will use the new seperators;
 say $dt.ymd;      # 2016/10/05
