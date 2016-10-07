@@ -2,7 +2,7 @@
 Stringy Date Magic
 
 ## Description
-This is a poorly written module Perl 6 module for handling DateTime in a stringy context. Basically that means it's used for parsing and formatting.
+This is a poorly written Perl 6 module for handling Dates and Times in a stringy context. Basically that means it's used for parsing and formatting.
 
 It started out as a sketch for a module, and grew from there. I had plans to clean up the logic and make it a proper module on the ecosystem, but `$dayjob` and `$life` take up most of my spare time, and I don't see myself working on it anytime soon... So I'm putting it here so that other people may use it if they dare, or steal ideas from it if they so wish.
 
