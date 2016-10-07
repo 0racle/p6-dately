@@ -12,6 +12,8 @@ NOTE: Dately was a working title never intended to see release. If it ever saw t
 At it's heart, Dately is just a sub-class of `DateTime` that provides a few extra convenience methods for output.
 
 ```perl6
+use Dately;
+
 my $dt = Dately.new( '2016-10-05T15:43:21' );
 
 say $dt.day-name; # Wednesday
