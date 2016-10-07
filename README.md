@@ -85,10 +85,10 @@ say $dt.format('%a %B %u, %r %Y');
 All the main format tokens work. The following are not supported: -
   * Timezone: `%Z`
   * Modifiers: `%E` and `%O`
-  * locale-specific ones: `%x` and `%X`
+  * Locale-specific ones: `%x` and `%X`
   * The weird ones: `%W` and `%U` ( aka, first-sunday-of-year-that-starts-with-four-day-week )
 
-Again this is not an officially released module, so I make no guarantees I've implemented any of these formatters correctly. That said, I did refer to `man strftime` and Perl5's `Time::Piece->strftime` quite a bit so it should be mostly fairly good-ish.
+Again this is not an officially released module, so I make no guarantees I've implemented any of these formatters correctly. That said, I did refer to `man strftime` and Perl5's `Time::Piece->strftime` quite a bit so it should be _mostly-fairly-good-ish_.
 
 ## Parsing
 Ahh, date parsing. Everyones favourite stress-relief past-time. Parsing dates is hard, and I probably made a mistake somewhere, but here goes.
