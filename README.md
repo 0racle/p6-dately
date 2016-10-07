@@ -16,29 +16,32 @@ use Dately;
 
 my $dt = Dately.new( '2016-10-05T15:43:21' );
 
-say $dt.day-name; # Wednesday
-say $dt.day-abbr; # Wed
+say $dt.day-name;   # Wednesday
+say $dt.day-abbr;   # Wed
 
-say $dt.ymd;      # 2016-10-05
-say $dt.ymd('_'); # 2016_10_05
+say $dt.month-name; # October
+say $dt.month-abbr; # Oct
 
-say $dt.dmy;      # 05-10-2016
-say $dt.dmy('/'); # 05/10/2016
+say $dt.ymd;        # 2016-10-05
+say $dt.ymd('_');   # 2016_10_05
 
-say $dt.mdy;      # 10-05-2016
-say $dt.mdy('|'); # 10|05|2016
+say $dt.dmy;        # 05-10-2016
+say $dt.dmy('/');   # 05/10/2016
 
-say $dt.hms;      # 15:43:21
-say $dt.hms(','); # 15,43,21
-say $dt.time;     # 15:43:21    [ same as .hms() with no arg ]
+say $dt.mdy;        # 10-05-2016
+say $dt.mdy('|');   # 10|05|2016
 
-say $dt.cdate;    # Wed Oct  5 15:43:21 2016
+say $dt.hms;        # 15:43:21
+say $dt.hms(',');   # 15,43,21
+say $dt.time;       # 15:43:21    [ same as .hms() with no arg ]
+
+say $dt.cdate;      # Wed Oct  5 15:43:21 2016
 
 # These ones are used for formatting later, but you can use them if you like
 
-say $dt.yr;       # 16          [ 2-digit year ]
-say $dt.clock;    # 3           [ hour as per clock face }]
-say $dt.meridiem; # PM
+say $dt.yr;         # 16          [ 2-digit year ]
+say $dt.clock;      # 3           [ hour as per clock face }]
+say $dt.meridiem;   # PM
 ```
 
 The default date and time separators can be redefined.
