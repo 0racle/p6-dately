@@ -6,10 +6,10 @@ This is a poorly written Perl 6 module for handling Dates and Times in a stringy
 
 It started out as a sketch for a module, and grew from there. I had plans to clean up the logic and make it a proper module on the ecosystem, but `$dayjob` and `$life` take up most of my spare time, and I don't see myself working on it anytime soon... So I'm putting it here so that other people may use it if they dare, or steal ideas from it if they so wish.
 
-NOTE: Dately was a working title never intended to see release. If it ever saw the light of the ecosystem I probably would have called it `DateTime::Stringy` or something silly like `Medjool`.
+NOTE: `Dately` was a working title never intended to see release. If it ever saw the light of the ecosystem I probably would have called it `DateTime::Stringy` or something silly like `Medjool`.
 
 ## Synopsis
-At it's heart, Dately is just a sub-class of `DateTime` that provides a few extra convenience methods for output.
+At it's heart, `Dately` is just a sub-class of `DateTime` that provides a few extra convenience methods for output.
 
 ```perl6
 use Dately;
@@ -54,7 +54,7 @@ say $dt.ymd;      # 2016/10/05
 say $dt.time      # 15_43_21
 ```
 
-NOTE: This really should be implemented as a shared constant across all Dately objects, but it's not. Add that to the TODO.
+NOTE: This really should be implemented as a shared constant across all `Dately` objects, but it's not. Add that to the TODO.
 
 But changing separators is boring anyway... What else can you change?
 ```perl6
@@ -67,10 +67,10 @@ say "Aujourd'hui c'est { $dt.day-name }, { $dt.day, $dt.month-name, $dt.year }."
 # OUTPUT: Aujourd'hui c'est mercredi, 5 octobre 2016.
 ```
 
-Again, this is cool, but semi-useless without being constant across all Dately objects.
+Again, this is semi-useless without being constant across all `Dately` objects.
 
 ## Formatting
-Ok, so you've got a Dately object and you want to output it in your format of choice. With the handy new methods above, you could probably build it yourself, but Dately also has support for `strftime` style format strings.
+Ok, so you've got a `Dately` object and you want to output it in your format of choice. With the handy new methods above, you could probably build it yourself, but `Dately` also has support for `strftime` style format strings.
 
 ```perl6
 say $dt.format('%a %b %e %T %Y');
