@@ -1,5 +1,5 @@
 # Dately
-Stringy Date Magic
+Stringy Date Magic (date/time parsing and formatting)
 
 ## Description
 This is a poorly written Perl 6 module for handling Dates and Times in a stringy context. Basically that means it's used for parsing and formatting.
