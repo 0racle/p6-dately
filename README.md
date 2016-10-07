@@ -80,11 +80,11 @@ Ok, I could have just done that with `.cdate` so lets do something different
 say $dt.format('%a %B %u, %r %Y');
 # OUTPUT: Wed October 3, 3:15:43 PM 2016
 ```
-All the main format tokens work. The following are not supported
-    * Timezone: `%Z`
-    * Modifiers: `%E` and `%O`
-    * locale-specific ones: `%x` and `%X`
-    * The weird ones: `%W` and `%U` ( aka first-sunday-of-year-that-starts-with-four-day-week )
+All the main format tokens work. The following are not supported: -
+  * Timezone: `%Z`
+  * Modifiers: `%E` and `%O`
+  * locale-specific ones: `%x` and `%X`
+  * The weird ones: `%W` and `%U` ( aka, first-sunday-of-year-that-starts-with-four-day-week )
 
 Again this is not an officially released module, so I make no guarantees I've implemented any of these formatters correctly. That said, I did refer to `man strftime` and Perl5's `Time::Piece->strftime` quite a bit so it should be mostly fairly good-ish.
 
