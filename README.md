@@ -82,8 +82,11 @@ say $dt.format('%a %b %e %T %Y');
 Ok, I could have just done that with `.cdate` so lets do something different
 
 ```perl6
-say $dt.format('%a %B %u, %r %Y');
-# OUTPUT: Wed October 3, 3:15:43 PM 2016
+say $dt.format('%A %B %u, %r %Y');
+# OUTPUT: Wednesday October 3, 3:15:43 PM 2016
+
+say $dt.format('%D %H:%M');
+# OUTPUT: 10/05/2016 15:43
 ```
 All the main format tokens work. The following are not supported: -
   * Timezone: `%Z`
