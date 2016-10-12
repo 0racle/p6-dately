@@ -66,7 +66,7 @@ But changing separators is boring anyway... What else can you change?
 $dt.day-list(< lundi mardi mercredi jeudi vendredi samedi dimanche >);
 $dt.month-list(< janvier février mars avril mai juin juillet août septembre octobre novembre décembre >);
 
-say "Aujourd'hui c'est { $dt.day-name }, { $dt.day, $dt.month-name, $dt.year }.";>)>)
+say "Aujourd'hui c'est { $dt.day-name }, { $dt.day, $dt.month-name, $dt.year }.";
 # OUTPUT: Aujourd'hui c'est mercredi, 5 octobre 2016.
 ```
 
